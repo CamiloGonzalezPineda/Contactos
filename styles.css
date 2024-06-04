@@ -1,0 +1,312 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* Scrool Snap*/
+
+*, *:before, *:after{  /* Hack para Box Model */
+    box-sizing: inherit;
+}
+
+body{
+    height: 100vh;
+    background: center;
+    font-size: 16px;
+    font-family: "Carlito", sans-serif;
+    box-sizing: border-box;
+    background-image: url('img/mountainsjpg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+@media (min-width: 760px) {
+ body{
+    height: 100vh;
+ }
+}
+
+
+header{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.superior{
+    width: 37%;
+    height: 50px;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    box-shadow: 1px 1px 1px rgba(117, 117, 117, 0.5);
+    margin-top: 20px ;
+    border-radius: 20px;
+   display: flex;
+   align-items: center;
+
+    
+}
+@media (max-width: 480px) {
+    .superior{
+   width: 40%;
+    }
+   }
+@media (max-width: 768px) {
+    .superior{
+   width: 80%;
+   
+    }
+   }
+   
+.search{
+    width: 75%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.icone{
+    position: absolute;
+    display: flex;
+    margin: 20px;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(./img/jeny.jpeg);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-size: cover;
+    margin: 6px;
+    margin-top: 2%;
+}
+
+@media (max-width: 480px) {
+ .user{
+    margin: 4px;
+    margin-top: 6%;}
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.infer{
+    width: 45%;
+    height: 650px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   overflow: scroll;
+
+
+}
+@media (max-width: 480px) {
+ .infer{
+width: 100%;
+ }
+}
+@media (max-width: 768px) {
+    .infer{
+   width: 100%;
+   
+    }
+   }
+
+
+.usuarUno{
+    width: 90%;
+    height: 150px;
+    margin: 4px;
+    border-radius:20px;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    box-shadow: 1px 1px 1px rgba(117, 117, 117, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 1440px) {
+    .usuarUno{
+       justify-content: space-between;
+      
+       }
+     
+   }
+
+
+.foto{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    background-image: url(./img/jeny.jpeg);
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto:hover{
+    transition: transform 1s;
+    transform:scale(1.1);
+}
+.fotoD{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    background-image: url(./img/david.jpeg);
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoD:hover{
+    transition: transform 1s;
+    transform:scale(1.1);
+}
+.fotoT{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    background-image: url(./img/mete.jpeg);
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoT:hover {
+    transition: transform 1s;
+    transform:scale(1.1);
+}
+.fotoC{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    background-image: url(./img/cut.jpeg);
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoC:hover{
+    transition: transform 1s;
+    transform:scale(1.1);
+}
+.fotoCI{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    background-image: url(./img/matt.jpeg);
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoCI:hover{
+    transition: transform 1s;
+    transform:scale(1.1);
+}
+.fotoS{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    background-image: url(./img/lisa.jpeg);
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoS:hover{
+    transition: transform 1s;
+    transform:scale(1.1);
+}
+.editar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px;
+    border: none;
+    
+}
+
+
+.editar:hover{
+    background-color: rgb(106, 116, 249);
+    color: white;
+    transition: background-color 1s, transform 1s;
+
+}
+
+h2{
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+h4{
+  
+   text-transform: uppercase;
+   transform: rotate(90deg);
+
+}
+
+.agregar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-bottom: 4px;
+    padding: 25px;
+    width: 40%;
+    height: 40px;
+    margin: 4px;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+@media (max-width: 480px) {
+    .agregar{
+   width: 100%;
+    }
+   }
+   @media (max-width: 768px) {
+       .agregar{
+      width:90%;
+       }
+      }
+   .usar{
+       display: flex;
+   }
+   
+.agregar:hover{
+    background-color: rgb(106, 116, 249) ;
+    color: white;
+    border: none;
+    transition: background-color 1s, transform 1s;
+
+
+}
